@@ -17,17 +17,13 @@ import { productQnty ,clearProduct} from "../../services/action/productQnty";
 import "../../style/cart.css";
 
 const Cart = ({ basketProps, productQnty ,clearProduct}) => {
-  // console.log("basketProps", basketProps);
 
   let productInCart = [];
   Object.keys(basketProps.products).forEach(function (item) {
-    // console.log("item cart", item);
     //check the item when in cart
-    // console.log(basketProps.products[item].inCart);
     if (basketProps.products[item].inCart) {
       productInCart.push(basketProps.products[item]);
     }
-    // console.log('productInCart',productInCart);
   });
 
   //For product Image stored in array
@@ -45,9 +41,7 @@ const Cart = ({ basketProps, productQnty ,clearProduct}) => {
   };
 
   productInCart = productInCart.map((product, index) => {
-    // console.log("product", product);
     // var Total=product.number*product.price;
-    // console.log('total',Total);
     return (
       <Fragment key={index}>
         <div className="card" key={product.id}>

@@ -12,7 +12,6 @@ import { getAllNumberInCart } from "../../services/action/getAllNumberInCartActi
 import "../../style/navbar.css";
 
 const Navbar = (props) => {
-  // console.log('basketprops',basketProps);
 
   useEffect(() => {
     getAllNumberInCart();

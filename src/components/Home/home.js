@@ -17,13 +17,11 @@ import Cats_Third from "../../assets/cats_third.jpg";
 
 
 const Home = (props,basketProps) => {
-  // console.log("action and reducer props==", basketProps);
   //without redux how to manage state :
   //   const [inCart, setInCart] = useState(0);
 //   const handlebtn = () => {
 //     // setInCart(inCart + 1);
 //     const actionData = props.addToCartAction;
-//     console.log('actionData',actionData);
 //   };
 
   //with Redux
